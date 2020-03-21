@@ -7,7 +7,7 @@ export default function comedy() {
             <h2 className="title">Comedy and Standup</h2>
             <div className="card">
               <h3 className="title"><a>knuckleheads comedy</a></h3>
-              <h4>9 to midnight</h4>
+              <h3 className="title">9 to midnight</h3>
               <img className="card-image" id="knuckleheads" src={knuckleheads}/>
             </div>
 
@@ -91,6 +91,7 @@ export default function comedy() {
       #knuckleheads{
         border-radius: 50%;
         margin-left: 20px;
+        width: 20%;
       }
 
       code {
@@ -143,6 +144,7 @@ export default function comedy() {
       }
       .card-image{
         width: 33%;
+        margin: 0 auto;
       }
 
       #ballMenuContainer {
