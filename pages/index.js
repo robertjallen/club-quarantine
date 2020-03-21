@@ -3,6 +3,7 @@ import entertainment from '../images/entertainment.png'
 import houseparty from '../images/houseparty.svg'
 import karaoke from '../images/karaoke.svg'
 import comedy from '../images/crimson_comedy.svg'
+import knuckleheads from '../images/knuckleheads.jpg'
 
 
 const Home = () => (
@@ -24,7 +25,23 @@ const Home = () => (
       </h1>
 
       <div className="grid-1">
-        <h3>Lets Party🎉🥂</h3>
+        
+
+        {/* //enter button */}
+        <div id="ballMenuContainer">
+                <div id="menuBall1" className="menuBall">
+                    <a href="/comedy" className="ball blueball">
+                        <div className="menuText">
+                            ENTER
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            
+        <h3>Lets Party🎉🥂</h3>  
+
+        {/* iframe */}  
         <iframe width="100%" height="333" src="https://www.youtube.com/embed/Y5kbQHToJ0o" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
         <h3>#CureSocialIsolation </h3>
@@ -35,7 +52,10 @@ const Home = () => (
           <h3>Comedy &rarr;</h3>
           <p>Our interactive virtual comedy shows are the best.</p>
           <img className="card-image" src={comedy}/>
+          <img className="card-image" id="knuckleheads" src={knuckleheads}/>
         </a>
+
+        
 
         
 
@@ -57,6 +77,15 @@ const Home = () => (
           <img className="card-image" src={entertainment} />
         </a> */}
       </div>
+      <div id="ballMenuContainer">
+                <div id="menuBall1" className="menuBall">
+                    <a href="/comedy" className="ball blueball">
+                        <div className="menuText">
+                            ENTER
+                        </div>
+                    </a>
+                </div>
+            </div>
     </main>
 
     <footer>
@@ -201,6 +230,186 @@ const Home = () => (
       }
       .card-image{
         width: 33%;
+      }
+      #knuckleheads{
+        border-radius: 50%;
+        margin-left: 20px;
+      }
+
+
+      #ballMenuContainer {
+        z-index: 1;    
+        padding: 0 calc(50% - 100px);
+      }
+      
+      .menuBall {
+          position: relative;
+          width: 200px;
+          height: 75px;
+          border-radius: 20px;
+      }
+      
+      .ball {
+          position:absolute;
+          width:100%;
+          height:100%;
+          border-radius: 20px;
+          border: 2px dashed #fff;
+          text-decoration: none;
+      }
+      
+      .ball:hover {
+          -webkit-animation: pulse 1s ease 0s infinite normal;
+          -o-animation: pulse 1s ease 0s infinite normal;
+          -moz-animation: pulse 1s ease 0s infinite normal;
+          animation: pulse 1s ease 0s infinite normal;
+      }
+      
+      
+      .blueball {
+          -moz-box-shadow: 0 0 0 3px #d6385b, 2px 1px 4px 4px rgba(10,10,0,.5);
+          -webkit-box-shadow: 0 0 0 3px #d6385b, 2px 1px 4px 4px rgba(10,10,0,.5);
+          -o-box-shadow: 0 0 0 3px #d6385b, 2px 1px 4px 4px rgba(10,10,0,.5);
+          box-shadow: 0 0 0 3px #d6385b, 2px 1px 6px 4px rgba(10,10,0,.5);
+      
+          background-image: -webkit-linear-gradient(35deg, #9f2e86 25%, transparent 25%, transparent 75%, #9f2e86 75%, #9f2e86), 
+          -webkit-linear-gradient(-35deg, #9f2e86 25%, transparent 25%, transparent 75%, #9f2e86 75%, #9f2e86);
+          background-image: -moz-linear-gradient(35deg, #9f2e86 25%, transparent 25%, transparent 75%, #9f2e86 75%, #9f2e86), 
+          -moz-linear-gradient(-35deg, #9f2e86 25%, transparent 25%, transparent 75%, #9f2e86 75%, #9f2e86);
+          background-size:20px 20px;  
+          background-color: #d6385b;
+      }
+      
+      
+      .menuText {
+          font-family: 'IdolwildRegular' , Verdana, Helvetica, Sans-Serif;
+          font-size: larger;
+          color: #ffffff;
+          position: relative;
+          vertical-align: middle;
+          text-align: center;
+          top: 35%;
+      }
+      
+      #menuBall1 {
+        -webkit-animation: bump 3s linear 0s infinite normal;
+      }
+      
+      
+      #menuBall1 {
+        -moz-animation: bump 3s linear 0s infinite normal;
+      }
+      
+      
+      #menuBall1 {
+        -o-animation: bump 3s linear 0s infinite normal;
+      }
+      
+      
+      #menuBall1 {
+        animation: bump 3s linear 0s infinite normal;
+      }
+      
+      @-webkit-keyframes pulse {
+          0% {
+            -webkit-transform: scale(1) rotate(0deg); 
+          }
+          50% {
+            -webkit-transform: scale(1.1) rotate(-5deg); 
+          }
+          100% {
+            -webkit-transform: scale(1) rotate(0deg); 
+          }
+      }
+      @-o-keyframes pulse {
+          0% {
+            -o-transform: scale(1) rotate(0deg); 
+          }
+          50% {
+            -o-transform: scale(1.1) rotate(-5deg); 
+          }
+          100% {
+            -o-transform: scale(1) rotate(0deg); 
+          }
+      }
+      @-moz-keyframes pulse {
+          0% {
+            -moz-transform: scale(1) rotate(0deg); 
+          }
+          50% {
+            -moz-transform: scale(1.1) rotate(-5deg); 
+          }
+          100% {
+            -moz-transform: scale(1) rotate(0deg); 
+          }
+      }
+      @keyframes pulse {
+          0% {
+            transform: scale(1) rotate(0deg); 
+          }
+          50% {
+            transform: scale(1.1) rotate(-5deg); 
+          }
+          100% {
+            transform: scale(1) rotate(0deg); 
+          }
+      }
+      
+      @-webkit-keyframes bump {
+        0% {
+            top: 0;
+        }
+        5% {
+            top: 3px;
+        }
+        10% {
+            top:0;
+        }
+        100% {
+            top:0;
+        }
+      }
+      @-o-keyframes bump {
+        0% {
+            top: 0;
+        }
+        5% {
+            top: 3px;
+        }
+        10% {
+            top:0;
+        }
+        100% {
+            top:0;
+        }
+      }
+      @-moz-keyframes bump {
+        0% {
+            top: 0;
+        }
+        5% {
+            top: 3px;
+        }
+        10% {
+            top:0;
+        }
+        100% {
+            top:0;
+        }
+      }
+      @keyframes bump {
+        0% {
+            top: 0;
+        }
+        5% {
+            top: 3px;
+        }
+        10% {
+            top:0;
+        }
+        100% {
+            top:0;
+        }
       }
 
       @media (max-width: 600px) {
