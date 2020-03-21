@@ -25,7 +25,7 @@ const Home = () => (
 
       <div className="grid-1">
         <h3>Lets Party🎉🥂</h3>
-        <iframe width="100%" height="333" src="https://www.youtube.com/embed/Y5kbQHToJ0o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <iframe width="100%" height="333" src="https://www.youtube.com/embed/Y5kbQHToJ0o" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
         <h3>#CureSocialIsolation </h3>
       </div>
