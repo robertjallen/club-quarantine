@@ -1,9 +1,15 @@
 import React from 'react'
+import knuckleheads from '../images/knuckleheads.jpg'
 
 export default function comedy() {
     return (
         <div className="container">
-            <title>Comedy and Standup</title>
+            <h2 className="title">Comedy and Standup</h2>
+            <div className="card">
+              <h3 className="title"><a>knuckleheads comedy</a></h3>
+              <h4>9 to midnight</h4>
+              <img className="card-image" id="knuckleheads" src={knuckleheads}/>
+            </div>
 
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdN-L8XsL42CvrxR8Aph0X_RKpJXhE0FSTzmuEqaGjvBshFrg/viewform?embedded=true" width="640" height="1816" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
@@ -56,8 +62,8 @@ export default function comedy() {
         text-decoration: none;
       }
 
-      .title a {
-        color: #0070f3;
+      .title a{
+        color: crimson;
         text-decoration: none;
       }
 
@@ -81,6 +87,10 @@ export default function comedy() {
       .description {
         line-height: 1.5;
         font-size: 1.5rem;
+      }
+      #knuckleheads{
+        border-radius: 50%;
+        margin-left: 20px;
       }
 
       code {
