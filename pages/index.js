@@ -10,19 +10,19 @@ const Home = () => (
   <div className="container">
     <Head>
 
-      <meta property="og:url" content="https://club-quarentine.now.sh" />
+      <meta property="og:url" content="https://club-quarantine.now.sh" />
       <meta property="og:type" content="article" />
       <meta property="og:title"  content="Club Quarantine" />
       <meta property="og:description"  content="Club Quarantine provides a cure from social isolation." />
-      <meta property="og:image"  content="https://club-quarentine.now.sh/_next/static/images/entertainment-9bdd50598b32042775faca812234ed37.png" />
+      <meta property="og:image"  content="https://club-quarantine.now.sh/_next/static/images/entertainment-9bdd50598b32042775faca812234ed37.png" />
       <title>CLUB QUARANTINE</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <main>
-      <h1 className="title">
-        <a href="#">CLUB QUARANTINE</a>
-      </h1>
+      <h2 className="title">
+        <a href="https://club-quarantine.now.sh">CLUB QUARANTINE</a>
+      </h2>
 
       <div className="grid-1">
         
@@ -416,6 +416,9 @@ const Home = () => (
         .grid {
           width: 100%;
           flex-direction: column;
+        }
+        .title{
+          font-size: 2rem;
         }
       }
     `}</style>
