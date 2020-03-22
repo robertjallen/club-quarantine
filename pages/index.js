@@ -14,7 +14,11 @@ const Home = () => (
       <meta property="og:type" content="article" />
       <meta property="og:title"  content="Club Quarantine" />
       <meta property="og:description"  content="Club Quarantine provides a cure from social isolation." />
-      <meta property="og:image"  content="https://club-quarantine.now.sh/_next/static/images/entertainment-9bdd50598b32042775faca812234ed37.png" />
+      {/* music */}
+      <meta property="og:image"  content="https://club-quarantine.now.sh/_next/static/images/music-c35db9553be935bd6314e31906dc521e.png" />
+      
+      {/* entertainment */}
+      {/* <meta property="og:image"  content="https://club-quarantine.now.sh/_next/static/images/entertainment-9bdd50598b32042775faca812234ed37.png" /> */}
       <title>CLUB QUARANTINE</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
