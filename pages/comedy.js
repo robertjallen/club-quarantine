@@ -13,10 +13,6 @@ export default function comedy() {
 
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdN-L8XsL42CvrxR8Aph0X_RKpJXhE0FSTzmuEqaGjvBshFrg/viewform?embedded=true" width="100%" height="1816" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-            
-
-
-
             <style jsx>{`
       .container {
         min-height: 100vh;

@@ -1,19 +1,20 @@
 import React from 'react'
+import karaokeImg from '../images/karaoke.svg'
 
 export default function karaoke() {
     return (
         <div className="container">
-            <title>Karaoke Room</title>
-            <div id="ballMenuContainer">
-                <div id="menuBall1" className="menuBall">
-                    <a href="#" className="ball blueball">
-                        <div className="menuText">
-                            SIGNUP
-                        </div>
-                    </a>
-                </div>
+            <h2 className="title">Karaoke</h2>
+            <div className="card">
+              <img className="card-image" id="karaokeImg" src={karaokeImg}/>
+              <div className="card-details">
+                <h3 className="title"><a>Sing your heart out 🎤</a></h3>
+                <h3 className="title">Sunday 3/22</h3>
+                <h3 className="title">9 to midnight</h3>
+              </div>
             </div>
 
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdN-L8XsL42CvrxR8Aph0X_RKpJXhE0FSTzmuEqaGjvBshFrg/viewform?embedded=true" width="100%" height="1816" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
             <style jsx>{`
       .container {
@@ -23,6 +24,8 @@ export default function karaoke() {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background: black;
+        color: #fff;
       }
 
       main {
@@ -58,8 +61,8 @@ export default function karaoke() {
         text-decoration: none;
       }
 
-      .title a {
-        color: #0070f3;
+      .title a{
+        color: crimson;
         text-decoration: none;
       }
 
@@ -84,6 +87,11 @@ export default function karaoke() {
         line-height: 1.5;
         font-size: 1.5rem;
       }
+      #karaoke{
+        border-radius: 50%;
+        margin-left: 20px;
+        width: 20%;
+      }
 
       code {
         background: #fafafa;
@@ -105,10 +113,11 @@ export default function karaoke() {
       }
 
       .card {
+        display: flex;
         margin: 1rem;
         flex-basis: 45%;
         padding: 1.5rem;
-        text-align: left;
+        align-items: center;
         color: inherit;
         text-decoration: none;
         border: 1px solid #eaeaea;
@@ -135,6 +144,7 @@ export default function karaoke() {
       }
       .card-image{
         width: 33%;
+        margin: 0 auto;
       }
 
       #ballMenuContainer {
