@@ -24,14 +24,14 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <main>
+      {/* header */}
       <div className="header">
         <a href="https://club-quarantine.now.sh"><img className="header-img" src={header}/></a>
       </div>
 
-      <div className="grid-1">
-        
 
+    <main>
+      <div className="grid-1">
         {/* //enter button */}
         <div id="ballMenuContainer">
                 <div id="menuBall1" className="menuBall">
@@ -112,7 +112,7 @@ const Home = () => (
     <style jsx>{`
       .container {
         min-height: 100vh;
-        padding: 0 0.5rem;
+        // padding: 0 0.5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
