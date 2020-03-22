@@ -34,7 +34,7 @@ const Home = () => (
         {/* //enter button */}
         <div id="ballMenuContainer">
                 <div id="menuBall1" className="menuBall">
-                    <a href="/comedy" className="ball blueball">
+                    <a href="/karaoke" className="ball blueball">
                         <div className="menuText">
                             ENTER
                         </div>
@@ -64,7 +64,7 @@ const Home = () => (
         
         {/* karaoke */}
             <a href="/karaoke" className="card">
-              <img className="card-image" id="karaokeImg" src={musicImg}/>
+              <img className="card-image" id="karaokeImg" src={karaokeImg}/>
               <div className="card-details">
                 <h3 className="title"><a>Sing your heart out 🎤</a></h3>
                 <h3 className="title">Sunday 3/22</h3>
@@ -89,7 +89,7 @@ const Home = () => (
 
       <div id="ballMenuContainer">
                 <div id="menuBall1" className="menuBall">
-                    <a href="/comedy" className="ball blueball">
+                    <a href="/karaoke" className="ball blueball">
                         <div className="menuText">
                             ENTER
                         </div>
