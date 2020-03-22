@@ -4,7 +4,7 @@ import houseparty from '../images/houseparty.svg'
 import karaokeImg from '../images/karaoke.svg'
 import comedy from '../images/crimson_comedy.svg'
 import knuckleheads from '../images/knuckleheads.jpg'
-
+import musicImg from '../images/music.png'
 
 const Home = () => (
   <div className="container">
@@ -60,7 +60,7 @@ const Home = () => (
         
         {/* karaoke */}
             <a href="/karaoke" className="card">
-              <img className="card-image" id="karaokeImg" src={karaokeImg}/>
+              <img className="card-image" id="karaokeImg" src={musicImg}/>
               <div className="card-details">
                 <h3 className="title"><a>Sing your heart out 🎤</a></h3>
                 <h3 className="title">Sunday 3/22</h3>
