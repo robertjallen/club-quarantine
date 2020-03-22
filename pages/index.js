@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import entertainment from '../images/entertainment.png'
 import houseparty from '../images/houseparty.svg'
-import karaoke from '../images/karaoke.svg'
+import karaokeImg from '../images/karaoke.svg'
 import comedy from '../images/crimson_comedy.svg'
 import knuckleheads from '../images/knuckleheads.jpg'
 
@@ -59,11 +59,14 @@ const Home = () => (
 
         
         {/* karaoke */}
-        <a href="/karaoke" className="card">
-          <h3>Karaoke &rarr;</h3>
-          <p>Sing your heart out!</p>
-          <img className="card-image" src={karaoke}/>
-        </a>
+            <a href="/karaoke" className="card">
+              <img className="card-image" id="karaokeImg" src={karaokeImg}/>
+              <div className="card-details">
+                <h3 className="title"><a>Sing your heart out 🎤</a></h3>
+                <h3 className="title">Sunday 3/22</h3>
+                <h3 className="title">9 to midnight</h3>
+              </div>
+            </a>
 
         {/* houseparty */}
         {/* <a href="/houseparty" className="card">
@@ -203,10 +206,12 @@ const Home = () => (
       }
 
       .card {
+        display: flex;
         margin: 1rem;
-        flex-basis: 45%;
+        // flex-basis: 45%;
         padding: 1.5rem;
-        text-align: left;
+        justify-content: space-between;
+        align-items: center;
         color: inherit;
         text-decoration: none;
         border: 1px solid #eaeaea;

@@ -117,6 +117,7 @@ export default function karaoke() {
         margin: 1rem;
         flex-basis: 45%;
         padding: 1.5rem;
+        justify-content: space-between;
         align-items: center;
         color: inherit;
         text-decoration: none;
