@@ -5,6 +5,7 @@ import karaokeImg from '../images/karaoke.svg'
 import comedy from '../images/crimson_comedy.svg'
 import knuckleheads from '../images/knuckleheads.jpg'
 import musicImg from '../images/music.png'
+import header from '../images/Header.jpg'
 
 const Home = () => (
   <div className="container">
@@ -24,9 +25,9 @@ const Home = () => (
     </Head>
 
     <main>
-      <h2 className="title">
-        <a href="https://club-quarantine.now.sh">CLUB QUARANTINE</a>
-      </h2>
+      <div className="header">
+        <a href="https://club-quarantine.now.sh"><img className="header-img" src={header}/></a>
+      </div>
 
       <div className="grid-1">
         
@@ -127,6 +128,13 @@ const Home = () => (
         flex-direction: column;
         justify-content: center;
         align-items: center;
+      }
+      .header{
+        width: 1000px;
+        max-width: 99vw;
+      }
+      .header-img{
+        width: 100%;
       }
 
       footer {
@@ -431,6 +439,11 @@ const Home = () => (
         }
         .title{
           font-size: 2rem;
+        }
+        .ball{
+          height: 75%;
+          width: 75%;
+          left: 5vw;
         }
       }
     `}</style>
