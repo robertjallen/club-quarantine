@@ -42,41 +42,44 @@ const Home = () => (
         <h3>Lets Party🎉🥂</h3>  
 
         {/* iframe */}  
-        <iframe width="100%" height="333" src="https://www.youtube.com/embed/Y5kbQHToJ0o" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        {/* <iframe width="100%" height="333" src="https://www.youtube.com/embed/Y5kbQHToJ0o" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
 
         <h3>#CureSocialIsolation </h3>
       </div>
 
       <div className="grid">
-        <a href="/comedy" className="card">
+
+        {/* comedy */}
+        {/* <a href="/comedy" className="card">
           <h3>Comedy &rarr;</h3>
           <p>Our interactive virtual comedy shows are the best.</p>
           <img className="card-image" src={comedy}/>
           <img className="card-image" id="knuckleheads" src={knuckleheads}/>
-        </a>
+        </a> */}
 
         
-
-        
-
-        {/* <a href="/karaoke" className="card">
+        {/* karaoke */}
+        <a href="/karaoke" className="card">
           <h3>Karaoke &rarr;</h3>
           <p>Sing your heart out!</p>
           <img className="card-image" src={karaoke}/>
         </a>
 
-        <a href="/houseparty" className="card">
+        {/* houseparty */}
+        {/* <a href="/houseparty" className="card">
           <h3>House party &rarr;</h3>
           <p>Socialize and hangout with other people virtually</p>
           <img className="card-image" src={houseparty}/>
-        </a>
+        </a> */}
 
-        <a href="entertainment" className="card">
+        {/* entertainers */}
+        {/* <a href="entertainment" className="card">
           <h3>Party Entertainment &rarr;</h3>
           <p>Our amazing entertainers will blow your mind.</p>
           <img className="card-image" src={entertainment} />
-        </a> */}
+        </a>  */}
       </div>
+
       <div id="ballMenuContainer">
                 <div id="menuBall1" className="menuBall">
                     <a href="/comedy" className="ball blueball">
@@ -111,7 +114,7 @@ const Home = () => (
       }
 
       main {
-        padding: 5rem 0;
+        padding: 1rem 0;
         flex: 1;
         display: flex;
         flex-direction: column;
