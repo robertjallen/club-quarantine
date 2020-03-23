@@ -9,7 +9,7 @@ export default function karaoke() {
               <img className="card-image" id="karaokeImg" src={karaokeImg}/>
               <div className="card-details">
                 <h3 className="title"><a>Sing your heart out 🎤</a></h3>
-                <h3 className="title">Sunday 3/22</h3>
+                <h3 className="title">Monday 3/23</h3>
                 <h3 className="title">9 to midnight</h3>
               </div>
             </div>
