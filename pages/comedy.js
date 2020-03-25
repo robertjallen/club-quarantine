@@ -1,5 +1,5 @@
 import React from 'react'
-import comedyImage from '../images/comedy.svg'
+import comedyImage from '../images/comedy-show.jpg'
 
 export default function comedy() {
     return (
