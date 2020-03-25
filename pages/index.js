@@ -96,7 +96,7 @@ const Home = () => (
       
 
 
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fcuresocialisolation%2Fposts%2F116171870016396&width=500&show_text=true&appId=242303396886484&height=449" width="500" height="449" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fcuresocialisolation%2Fposts%2F116171870016396&show_text=true&appId=242303396886484&height=449" width="500" height="449" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 
     </main>
@@ -123,6 +123,10 @@ const Home = () => (
         color: #fff;
       }
 
+      iframe{
+        width: 500px;
+        max-width: 99%;
+      }
       main {
         padding: 1rem 0;
         flex: 1;
