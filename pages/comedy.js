@@ -1,14 +1,14 @@
 import React from 'react'
-import knuckleheads from '../images/knuckleheads.jpg'
+import comedyImage from '../images/comedy.svg'
 
 export default function comedy() {
     return (
         <div className="container">
             <h2 className="title">Comedy and Standup</h2>
             <div className="card">
-              <h3 className="title"><a>knuckleheads comedy</a></h3>
-              <h3 className="title">9 to midnight</h3>
-              <img className="card-image" id="knuckleheads" src={knuckleheads}/>
+              <h3 className="title"><a>Standup Comedy Night</a></h3>
+              <h3 className="title">9:30 to 11:30</h3>
+              <img className="card-image" id="knuckleheads" src={comedyImage}/>
             </div>
 
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdN-L8XsL42CvrxR8Aph0X_RKpJXhE0FSTzmuEqaGjvBshFrg/viewform?embedded=true" width="100%" height="1816" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>

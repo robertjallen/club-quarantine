@@ -1,12 +1,12 @@
 import React from 'react'
-import karaokeImg from '../images/karaoke.svg'
+import houseparty from '../images/houseparty.svg'
 
 export default function karaoke() {
     return (
         <div className="container">
             <h2 className="title">Karaoke</h2>
             <div className="card">
-              <img className="card-image" id="karaokeImg" src={karaokeImg}/>
+              <img className="card-image" id="karaokeImg" src={houseparty}/>
               <div className="card-details">
                 <h3 className="title"><a>Sing your heart out 🎤</a></h3>
                 <h3 className="title">Monday 3/23</h3>

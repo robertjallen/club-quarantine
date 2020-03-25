@@ -8,6 +8,7 @@ import musicImg from '../images/music.png'
 import header from '../images/Header.jpg'
 
 const Home = () => (
+ 
   <div className="container">
     <Head>
 
@@ -22,6 +23,7 @@ const Home = () => (
       {/* <meta property="og:image"  content="https://club-quarantine.now.sh/_next/static/images/entertainment-9bdd50598b32042775faca812234ed37.png" /> */}
       <title>CLUB QUARANTINE</title>
       <link rel="icon" href="/favicon.ico" />
+     
     </Head>
 
       {/* header */}
@@ -33,7 +35,7 @@ const Home = () => (
     <main>
       <div className="grid-1">
         {/* //enter button */}
-        <div id="ballMenuContainer">
+        {/* <div id="ballMenuContainer">
                 <div id="menuBall1" className="menuBall">
                     <a href="/karaoke" className="ball blueball">
                         <div className="menuText">
@@ -41,7 +43,7 @@ const Home = () => (
                         </div>
                     </a>
                 </div>
-            </div>
+            </div> */}
 
             
         <h3>Lets Party🎉🥂</h3>  
@@ -55,20 +57,23 @@ const Home = () => (
       <div className="grid">
 
         {/* comedy */}
-        {/* <a href="/comedy" className="card">
-          <h3>Comedy &rarr;</h3>
-          <p>Our interactive virtual comedy shows are the best.</p>
-          <img className="card-image" src={comedy}/>
-          <img className="card-image" id="knuckleheads" src={knuckleheads}/>
-        </a> */}
+        <a href="/comedy" className="card">
+            <img className="card-image" src={comedy}/>
+            {/* <img className="card-image" id="knuckleheads" src={knuckleheads}/> */}
+          <div className="card-details">
+            <h3 className="title"><a>Comedy: featuring standup comics 🎤</a></h3>
+            <h3 className="title">Saturday 3/28</h3>
+            <h3 className="title">9:30 to 11:30</h3>
+          </div>
+        </a>
 
         
         {/* karaoke */}
             <a href="/karaoke" className="card">
-              <img className="card-image" id="karaokeImg" src={karaokeImg}/>
+              <img className="card-image" id="karaokeImg" src={houseparty}/>
               <div className="card-details">
-                <h3 className="title"><a>Sing your heart out 🎤</a></h3>
-                <h3 className="title">Monday 3/23</h3>
+                <h3 className="title"><a>House Party/ DJ 🎤</a></h3>
+                <h3 className="title">Friday 3/27</h3>
                 <h3 className="title">9 to midnight</h3>
               </div>
             </a>
@@ -88,15 +93,12 @@ const Home = () => (
         </a>  */}
       </div>
 
-      <div id="ballMenuContainer">
-                <div id="menuBall1" className="menuBall">
-                    <a href="/karaoke" className="ball blueball">
-                        <div className="menuText">
-                            ENTER
-                        </div>
-                    </a>
-                </div>
-            </div>
+      
+
+
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fcuresocialisolation%2Fposts%2F116171870016396&width=500&show_text=true&appId=242303396886484&height=449" width="500" height="449" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+
     </main>
 
     <footer>
