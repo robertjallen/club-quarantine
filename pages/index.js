@@ -66,7 +66,7 @@ const Home = () => (
             <h3 className="title">9:30 to 11:30 EST</h3>
             <div className="details-btn">
 
-                <a href="https://zoom.us/j/7280418119" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
+                <a href="https://us04web.zoom.us/j/3143189310" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
 
                 {/* paypal button  */}
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -89,7 +89,7 @@ const Home = () => (
                 <h3 className="title">9 to midnight EST</h3>
                 <div className="details-btn">
 
-                  <a href="https://zoom.us/j/7280418119" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
+                  <a href="https://us04web.zoom.us/j/3143189310" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
 
                   {/* paypal button  */}
                   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
