@@ -8,7 +8,7 @@ export default function karaoke() {
         <div className="container">
             <h2 className="title">House Party w/ DJ MK</h2>
             <div className="card">
-              <img className="card-image" id="knuckleheads" src={houseparty}/>
+              {/* <img className="card-image" id="knuckleheads" src={houseparty}/> */}
               <div className="card-details">
                 <h3 className="title"><a>House Party</a></h3>
                 <h3 className="title">8:30 to 11:30 EST</h3>

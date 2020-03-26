@@ -8,7 +8,7 @@ export default function comedy() {
         <div className="container">
             <h2 className="title">Comedy and Standup</h2>
             <div className="card">
-              <img className="card-image" id="knuckleheads" src={comedyImage}/>
+              {/* <img className="card-image" id="knuckleheads" src={comedyImage}/> */}
               <div className="card-details">
                 <h3 className="title"><a>Standup Comedy Night</a></h3>
                 <h3 className="title">9:30 to 11:30 EST</h3>
@@ -364,6 +364,14 @@ export default function comedy() {
         
 
       @media (max-width: 600px) {
+
+        .card{
+          padding: 0 .5rem;
+        }
+        .card .card-image, #knuckleheads{
+          display: none;
+        }
+
         .grid {
           width: 100%;
           flex-direction: column;

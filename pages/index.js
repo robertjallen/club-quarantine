@@ -479,6 +479,12 @@ const Home = () => (
       }
 
       @media (max-width: 600px) {
+        .card{
+          padding: 0 .5rem;
+        }
+        .card-image{
+          display: none;
+        }
         .grid {
           width: 100%;
           flex-direction: column;
