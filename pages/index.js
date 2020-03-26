@@ -6,12 +6,12 @@ import comedy from '../images/crimson_comedy.svg'
 import knuckleheads from '../images/knuckleheads.jpg'
 import musicImg from '../images/music.png'
 import header from '../images/Header.jpg'
+import zoomIcon from '../images/zoom-icon.png'
 
 const Home = () => (
  
   <div className="container">
     <Head>
-
       <meta property="og:url" content="https://club-quarantine.now.sh" />
       <meta property="og:type" content="article" />
       <meta property="og:title"  content="Club Quarantine" />
@@ -64,6 +64,18 @@ const Home = () => (
             <h3 className="title"><a>Comedy: featuring standup comics 🎤</a></h3>
             <h3 className="title">Saturday 3/28</h3>
             <h3 className="title">9:30 to 11:30</h3>
+            <div className="details-btn">
+
+                <a href="https://zoom.us/j/7280418119" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
+
+                {/* paypal button  */}
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input type="hidden" name="hosted_button_id" value="7NPHVVQ7JC8SL" />
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                  <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+              </div>
           </div>
         </a>
 
@@ -75,6 +87,18 @@ const Home = () => (
                 <h3 className="title"><a>House Party/ DJ 🎤</a></h3>
                 <h3 className="title">Friday 3/27</h3>
                 <h3 className="title">9 to midnight</h3>
+                <div className="details-btn">
+
+                  <a href="https://zoom.us/j/7280418119" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
+
+                  {/* paypal button  */}
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="7NPHVVQ7JC8SL" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                  </form>
+                </div>
               </div>
             </a>
 
@@ -142,7 +166,11 @@ const Home = () => (
       .header-img{
         width: 100%;
       }
-
+      .zoom-icon{
+        border-radius: 50%;
+        width: 20%;
+        margin: 0 auto; 
+      }
       footer {
         width: 100%;
         height: 100px;
@@ -226,7 +254,7 @@ const Home = () => (
       .card {
         display: flex;
         margin: 1rem;
-        // flex-basis: 45%;
+        text-align: center;
         padding: 1.5rem;
         justify-content: space-between;
         align-items: center;
@@ -260,6 +288,18 @@ const Home = () => (
       #knuckleheads{
         border-radius: 50%;
         margin-left: 20px;
+      }
+      .card-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .details-btn{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: center;
       }
 
 
