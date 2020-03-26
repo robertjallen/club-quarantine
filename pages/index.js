@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import entertainment from '../images/entertainment.png'
-import houseparty from '../images/houseparty.svg'
+import houseparty from '../images/houseparty.png'
 import karaokeImg from '../images/karaoke.svg'
 import comedy from '../images/crimson_comedy.svg'
 import knuckleheads from '../images/knuckleheads.jpg'
