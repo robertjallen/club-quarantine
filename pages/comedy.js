@@ -6,12 +6,24 @@ export default function comedy() {
         <div className="container">
             <h2 className="title">Comedy and Standup</h2>
             <div className="card">
-              <h3 className="title"><a>Standup Comedy Night</a></h3>
-              <h3 className="title">9:30 to 11:30</h3>
               <img className="card-image" id="knuckleheads" src={comedyImage}/>
+              <div className="card-details">
+                <h3 className="title"><a>Standup Comedy Night</a></h3>
+                <h3 className="title">9:30 to 11:30</h3>
+
+              {/* paypal form  */}
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input type="hidden" name="hosted_button_id" value="7NZKRA78395C4" />
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                  <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+              </div>
             </div>
 
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdN-L8XsL42CvrxR8Aph0X_RKpJXhE0FSTzmuEqaGjvBshFrg/viewform?embedded=true" width="100%" height="1816" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            {/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdN-L8XsL42CvrxR8Aph0X_RKpJXhE0FSTzmuEqaGjvBshFrg/viewform?embedded=true" width="100%" height="1816" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> */}
+           
+
 
             <style jsx>{`
       .container {
@@ -110,9 +122,12 @@ export default function comedy() {
       }
 
       .card {
+        width: 500px;
+        max-width: 90vw;
+        display: flex;
+        align-items: center;
         margin: 1rem;
-        flex-basis: 45%;
-        padding: 1.5rem;
+        padding: 1rem;
         text-align: left;
         color: inherit;
         text-decoration: none;
@@ -126,6 +141,12 @@ export default function comedy() {
       .card:active {
         color: #0070f3;
         border-color: #0070f3;
+      }
+
+      .card-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       .card h3 {
