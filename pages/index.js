@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import entertainment from '../images/entertainment.png'
-import houseparty from '../images/houseparty.png'
+import houseparty from '../images/houseparty.svg'
 import karaokeImg from '../images/karaoke.svg'
 import comedy from '../images/crimson_comedy.svg'
 import knuckleheads from '../images/knuckleheads.jpg'
@@ -17,7 +17,7 @@ const Home = () => (
       <meta property="og:title"  content="Club Quarantine" />
       <meta property="og:description"  content="Club Quarantine provides a cure from social isolation." />
       {/* music */}
-      <meta property="og:image"  content="https://club-quarantine.now.sh/_next/static/images/houseparty-c789690956ee2ef545ac85b2ac2d923a.svg" />
+      <meta property="og:image"  content="https://club-quarantine.now.sh/_next/static/images/houseparty-a55c40a7a90c59fd9ebfbf497e1c08c8.png" />
       
       {/* entertainment */}
       {/* <meta property="og:image"  content="https://club-quarantine.now.sh/_next/static/images/entertainment-9bdd50598b32042775faca812234ed37.png" /> */}
