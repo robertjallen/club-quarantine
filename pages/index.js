@@ -63,7 +63,7 @@ const Home = () => (
           <div className="card-details">
             <h3 className="title"><a>Comedy: featuring standup comics 🎤</a></h3>
             <h3 className="title">Saturday 3/28</h3>
-            <h3 className="title">9:30 to 11:30</h3>
+            <h3 className="title">9:30 to 11:30 EST</h3>
             <div className="details-btn">
 
                 <a href="https://zoom.us/j/7280418119" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
@@ -86,7 +86,7 @@ const Home = () => (
               <div className="card-details">
                 <h3 className="title"><a>House Party/ DJ 🎤</a></h3>
                 <h3 className="title">Friday 3/27</h3>
-                <h3 className="title">9 to midnight</h3>
+                <h3 className="title">9 to midnight EST</h3>
                 <div className="details-btn">
 
                   <a href="https://zoom.us/j/7280418119" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
