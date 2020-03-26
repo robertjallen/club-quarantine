@@ -1,20 +1,37 @@
 import React from 'react'
 import houseparty from '../images/houseparty.svg'
+import zoomIcon from '../images/zoom-icon.png'
+
 
 export default function karaoke() {
     return (
         <div className="container">
-            <h2 className="title">Karaoke</h2>
+            <h2 className="title">House Party w/ DJ MK</h2>
             <div className="card">
-              <img className="card-image" id="karaokeImg" src={houseparty}/>
+              <img className="card-image" id="knuckleheads" src={houseparty}/>
               <div className="card-details">
-                <h3 className="title"><a>Sing your heart out 🎤</a></h3>
-                <h3 className="title">Monday 3/23</h3>
-                <h3 className="title">9 to midnight</h3>
+                <h3 className="title"><a>House Party</a></h3>
+                <h3 className="title">8:30 to 11:30</h3>
+
+              <div className="details-btn">
+
+                <a href="https://zoom.us/j/7280418119" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
+
+                {/* paypal button  */}
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input type="hidden" name="hosted_button_id" value="7NPHVVQ7JC8SL" />
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                  <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+              </div>
+                
               </div>
             </div>
 
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdN-L8XsL42CvrxR8Aph0X_RKpJXhE0FSTzmuEqaGjvBshFrg/viewform?embedded=true" width="100%" height="1816" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            {/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdN-L8XsL42CvrxR8Aph0X_RKpJXhE0FSTzmuEqaGjvBshFrg/viewform?embedded=true" width="100%" height="1816" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> */}
+           
+
 
             <style jsx>{`
       .container {
@@ -87,7 +104,7 @@ export default function karaoke() {
         line-height: 1.5;
         font-size: 1.5rem;
       }
-      #karaoke{
+      #knuckleheads{
         border-radius: 50%;
         margin-left: 20px;
         width: 20%;
@@ -113,12 +130,13 @@ export default function karaoke() {
       }
 
       .card {
+        width: 500px;
+        max-width: 90vw;
         display: flex;
-        margin: 1rem;
-        flex-basis: 45%;
-        padding: 1.5rem;
-        justify-content: space-between;
         align-items: center;
+        margin: 1rem;
+        padding: 1rem;
+        text-align: left;
         color: inherit;
         text-decoration: none;
         border: 1px solid #eaeaea;
@@ -131,6 +149,12 @@ export default function karaoke() {
       .card:active {
         color: #0070f3;
         border-color: #0070f3;
+      }
+
+      .card-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       .card h3 {
@@ -148,6 +172,18 @@ export default function karaoke() {
         margin: 0 auto;
       }
 
+      .details-btn{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
+
+      .zoom-icon{
+        border-radius: 50%;
+        width: 20%;
+        margin: 0 auto; 
+      }
       #ballMenuContainer {
         z-index: 1;    
         margin-top: 40vh;
