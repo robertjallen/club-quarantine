@@ -7,6 +7,7 @@ import knuckleheads from '../images/knuckleheads.jpg'
 import musicImg from '../images/music.png'
 import header from '../images/Header.jpg'
 import zoomIcon from '../images/zoom-icon.png'
+import coronaFlyer from '../images/Corona-comedy-flyer.png'
 
 const Home = () => (
  
@@ -29,6 +30,7 @@ const Home = () => (
       {/* header */}
       <div className="header">
         <a href="https://club-quarantine.now.sh"><img className="header-img" src={header}/></a>
+        <a href="https://club-quarantine.now.sh"><img className="header-img" src={coronaFlyer}/></a>
       </div>
 
 
