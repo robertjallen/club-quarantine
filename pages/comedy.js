@@ -1,7 +1,7 @@
 import React from 'react'
 import comedyImage from '../images/comedy-show.jpg'
 import zoomIcon from '../images/zoom-icon.png'
-
+import paypalIcon from '../images/paypal.png'
 
 export default function comedy() {
     return (
@@ -18,12 +18,13 @@ export default function comedy() {
                 <a href="https://bit.ly/2xsslJV" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
 
                 {/* paypal button  */}
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                {/* <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                   <input type="hidden" name="cmd" value="_s-xclick" />
                   <input type="hidden" name="hosted_button_id" value="7NPHVVQ7JC8SL" />
                   <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
                   <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                </form>
+                </form> */}
+                 <a href="https://paypal.me/Dumskitzllc" target="_blank"><img className="paypal-icon" src={paypalIcon}/></a>
               </div>
                 
               </div>
@@ -171,6 +172,13 @@ export default function comedy() {
         width: 33%;
         margin: 0 auto;
       }
+      .paypal-icon{
+        padding: 5px;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        width: 40%;
+        margin: 0 auto; 
+      }
 
       .details-btn{
         justify-content: center;
@@ -181,7 +189,7 @@ export default function comedy() {
 
       .zoom-icon{
         border-radius: 50%;
-        width: 20%;
+        width: 40%;
         margin: 0 auto; 
       }
       #ballMenuContainer {
