@@ -37,7 +37,7 @@ const Home = () => (
       {/* header */}
       <div className="header">
         <a href="https://club-quarantine.now.sh"><img className="header-img" src={header}/></a>
-        <a href="https://club-quarantine.now.sh"><img className="header-img" src={coronaFlyer}/></a>
+        <a href="https://bit.ly/2xsslJV"><img className="header-img" src={coronaFlyer}/></a>
       </div>
 
 
@@ -75,7 +75,7 @@ const Home = () => (
             <h3 className="title">9:30 to 11:30 EST</h3>
             <div className="details-btn">
             
-                <a href="https://bit.ly/3dA3fJG" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
+                <a href="https://bit.ly/2xsslJV" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
 
                 {/* paypal button  */}
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -98,7 +98,7 @@ const Home = () => (
                 <h3 className="title">9 to midnight EST</h3>
                 <div className="details-btn">
 
-                  <a href="https://bit.ly/3dA3fJG" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
+                  <a href="https://bit.ly/2xsslJV" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
 
                   {/* paypal button  */}
                   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
