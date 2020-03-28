@@ -15,7 +15,7 @@ export default function comedy() {
               
               <div className="details-btn">
 
-                <a href="https://us04web.zoom.us/j/3143189310" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
+                <a href="https://bit.ly/3dA3fJG" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
 
                 {/* paypal button  */}
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">

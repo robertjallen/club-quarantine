@@ -8,9 +8,12 @@ import musicImg from '../images/music.png'
 import header from '../images/Header.jpg'
 import zoomIcon from '../images/zoom-icon.png'
 import coronaFlyer from '../images/Corona-comedy-flyer.png'
+import chat from "../utils/chatbot"
+import chatbot from '../utils/chatbot'
+
 
 const Home = () => (
- 
+
   <div className="container">
     <Head>
       <meta property="og:url" content="https://club-quarantine.now.sh" />
@@ -24,6 +27,10 @@ const Home = () => (
       {/* <meta property="og:image"  content="https://club-quarantine.now.sh/_next/static/images/entertainment-9bdd50598b32042775faca812234ed37.png" /> */}
       <title>CLUB QUARANTINE</title>
       <link rel="icon" href="/favicon.ico" />
+       {/* DRIFT_CHAT_BOT  */}
+      {/* Start of Async Drift Code  */}
+      <script>chatbot();</script>
+
      
     </Head>
 
@@ -67,8 +74,8 @@ const Home = () => (
             <h3 className="title">Saturday 3/28</h3>
             <h3 className="title">9:30 to 11:30 EST</h3>
             <div className="details-btn">
-
-                <a href="https://us04web.zoom.us/j/3143189310" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
+            
+                <a href="https://bit.ly/3dA3fJG" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
 
                 {/* paypal button  */}
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -91,7 +98,7 @@ const Home = () => (
                 <h3 className="title">9 to midnight EST</h3>
                 <div className="details-btn">
 
-                  <a href="https://us04web.zoom.us/j/3143189310" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
+                  <a href="https://bit.ly/3dA3fJG" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
 
                   {/* paypal button  */}
                   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
