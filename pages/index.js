@@ -38,7 +38,8 @@ const Home = () => (
       {/* header */}
       <div className="header">
         <a href="https://club-quarantine.now.sh"><img className="header-img" src={header}/></a>
-        <a href="https://bit.ly/2xsslJV"><img className="header-img" src={coronaFlyer}/></a>
+        <iframe height="315" src="https://www.youtube.com/embed/0TUSW3kP7Gs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {/* <a href="https://bit.ly/2xsslJV"><img className="header-img" src={coronaFlyer}/></a> */}
       </div>
 
 
@@ -71,9 +72,9 @@ const Home = () => (
             {/* <img className="card-image" src={comedy}/> */}
             {/* <img className="card-image" id="knuckleheads" src={knuckleheads}/> */}
           <div className="card-details">
-            <h3 className="title"><a>Comedy: featuring standup comics 🎤</a></h3>
-            <h3 className="title">Saturday 3/28</h3>
-            <h3 className="title">9:30 to 11:30 EST</h3>
+            <h3 className="title"><a>Comedy: featuring Kansas City comics 🎤</a></h3>
+            <h3 className="title">Saturday</h3>
+            <h3 className="title">10:30 to 12:30 EST</h3>
             <div className="details-btn">
             
                 <a href="https://bit.ly/2xsslJV" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
@@ -96,8 +97,8 @@ const Home = () => (
               {/* <img className="card-image" id="karaokeImg" src={houseparty}/> */}
               <div className="card-details">
                 <h3 className="title"><a>House Party/ DJ 🎤</a></h3>
-                <h3 className="title">Friday 3/27</h3>
-                <h3 className="title">9 to midnight EST</h3>
+                <h3 className="title">Friday</h3>
+                <h3 className="title">10 to midnight EST</h3>
                 <div className="details-btn">
 
                   <a href="https://bit.ly/2xsslJV" target="_blank"><img className="zoom-icon" src={zoomIcon}/></a>
@@ -163,6 +164,7 @@ const Home = () => (
         width: 500px;
         max-width: 99%;
       }
+
       main {
         padding: 1rem 0;
         flex: 1;
@@ -176,6 +178,9 @@ const Home = () => (
         max-width: 99vw;
       }
       .header-img{
+        width: 100%;
+      }
+      .header iframe{
         width: 100%;
       }
       .zoom-icon{

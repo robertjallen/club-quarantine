@@ -11,7 +11,7 @@ export default function karaoke() {
               {/* <img className="card-image" id="knuckleheads" src={houseparty}/> */}
               <div className="card-details">
                 <h3 className="title"><a>House Party</a></h3>
-                <h3 className="title">8:30 to 11:30 EST</h3>
+                <h3 className="title">10 to 11:30 EST</h3>
 
               <div className="details-btn">
 

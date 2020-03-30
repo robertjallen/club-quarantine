@@ -11,7 +11,7 @@ export default function comedy() {
               {/* <img className="card-image" id="knuckleheads" src={comedyImage}/> */}
               <div className="card-details">
                 <h3 className="title"><a>Standup Comedy Night</a></h3>
-                <h3 className="title">9:30 to 11:30 EST</h3>
+                <h3 className="title">10:30 to 12:30 EST</h3>
               
               <div className="details-btn">
 
