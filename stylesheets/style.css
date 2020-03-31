@@ -1,0 +1,255 @@
+*{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #eaeaea;
+  background-color: black;
+  font-size: 1.5em;
+  line-height: 1.5;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+.hide{
+  display:none;
+}
+.navbar-header .navbar-brand{
+  color: lime;
+}
+
+header{    
+  position: relative;
+    /* height: 40vh; */
+  overflow: hidden;
+}
+
+header img{
+    width: 100%;
+    overflow: hidden;
+    /* margin: -5% -30%  0 -30%; */
+} 
+
+
+.container{
+  background: black;
+  width: 1000px;
+  margin: 4em auto;
+  max-width: 90%;
+  color: #333;    
+}
+.container .video{
+  margin: 0 auto;
+  width: 100%;
+}
+.card {
+  background: rgba(255, 255, 255, 0.952);
+  display: flex;
+  margin: 1rem;
+  text-align: center;
+  padding: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #7e378556;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card-image{
+  padding: 1%;
+  width: 33%;
+  border: 1px solid #7e378556;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.card-image:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#zoom-icon{
+  border-radius: 50%;
+}
+.details-btn{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+h1{
+    margin: 0;
+    color: deeppink;
+    padding: .5em;
+    text-transform: uppercase;
+}
+p{
+    font-size: 18px;
+}
+h3{
+  margin: 0;
+}
+
+#find2{
+    display: none;
+}
+#find3{
+    display: none;
+}
+#events2{
+    display: none;
+}
+
+footer{
+  background: #666;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 1em;    
+  margin-bottom: 0;    
+}
+
+.above {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center; 
+}
+/* .above i{
+  text-align: center;
+  color: #fff;
+  background: #3b5998; 
+  text-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+  width: 20%;
+} */
+.above a{
+  padding: .5em 0;
+  border-radius: 3px;
+  margin: .5em;
+  text-align: center;
+  color: #fff;
+/*   background: #3b5998; */
+  text-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+  width: calc(20% - 1em);
+  transition: all .2s ease-in-out;
+}
+.above a:hover{
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+.bigLink{
+    font-size: 22px;
+    color: lightcoral;
+    font-weight: 500;
+    text-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    transition: all .2s ease-in-out;
+}
+.bigLink:hover{
+   text-decoration: none;    
+   color: #fff;    
+   transform: scale(1.1); 
+}
+.smallLink p{
+    font-size: 16px;
+}
+.smallLink{
+    color: #fff;
+    text-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    transition: all .2s ease-in-out;
+}
+.smallLink:hover{
+   text-decoration: none;    
+   color: lightgreen;    
+   transform: scale(1.1); 
+}
+.below {
+  color: #fff;
+  
+  padding: 1em;
+  font-size: 16px;
+  text-align: center;
+}
+.facebook{
+  background: #3b5998;
+}
+.twitter{
+  background: #00b6f1;
+}
+.github{
+  background: purple;
+}
+.linkedin{
+  background: #007bb6;
+}
+.at{
+  background: #d34836;
+ }
+
+@media(min-width: 525px){
+   header img{
+/*    height: 40vh;*/
+    width: 100%;   
+  } 
+    p{
+    font-size: 20px;
+    }
+    .bigLink{
+        font-size: 22px;
+    }
+    #find{
+        display: none;
+    }
+    #find2{
+        display: block;
+    }
+    #events{
+        display: none;
+    }
+    #events2{
+        display: block;
+    }
+    header img {
+   top: 0;
+   left: 0;
+   width: 1000px;
+   max-width: 100%;    
+   height: auto;
+}
+}
+
+@media(min-width: 760px){
+    #find{
+        display: none;
+    }
+    #find2{
+        display: none;
+    }
+    #find3{
+        display: block;
+    }
+    p{
+        font-size: 22px;        
+    }
+    .bigLink{
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: medium;
+  }
+  h3{
+    font-size: 12px;
+  }
+  .card-image{
+    width: 50%;
+  }
+}
