@@ -290,7 +290,7 @@ h1{
 @media only screen and (max-width: 600px) {
   #ballMenuContainer {
     
-    left:  calc(50vw - 25vw);
+    left:  calc(50vw - 30vw);
   }
   .menuBall {
     width: 40vw;
