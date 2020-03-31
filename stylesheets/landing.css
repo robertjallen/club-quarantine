@@ -41,13 +41,13 @@ h1{
 #ballMenuContainer {
   z-index: 1;    
   margin-top: 40vh;
-  left:  calc(50vw - 100px);
+  left:  calc(50vw - 10vw);
   position: absolute;
 }
 
 .menuBall {
     position: relative;
-    width: 200px;
+    width: 20vw;
     height: 75px;
     border-radius: 20px;
 }
@@ -86,7 +86,7 @@ h1{
 
 .menuText {
     font-family: 'IdolwildRegular' , Verdana, Helvetica, Sans-Serif;
-    font-size: larger;
+    font-size: 2rem;
     color: #ffffff;
     position: relative;
     vertical-align: middle;
@@ -289,7 +289,11 @@ h1{
 
 @media only screen and (max-width: 600px) {
   #ballMenuContainer {
-    left:  calc(50vw - 50px);
+    
+    left:  calc(50vw - 20vw);
+  }
+  .menuBall {
+    width: 40vw;
   }
 }
 
